@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alwar Golden Roadways Ltd.</title>
+    <title>Alwar Golden Roadways</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
     <style>
@@ -373,6 +373,70 @@
                 display: flex
             }
         }
+
+        .clients-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 30px;
+            text-align: center;
+            background: cornsilk;
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        .client-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 6px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+            transition: .3s;
+        }
+
+        .client-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .client-card img {
+            width: 120px;
+            height: 80px;
+            object-fit: contain;
+            /* keeps logo ratio */
+            margin-bottom: 12px;
+            filter: grayscale(0%);
+            transition: .3s;
+        }
+
+        .client-card:hover img {
+            filter: grayscale(0%);
+        }
+
+        .client-card p {
+            font-size: 14px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .branches-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            background: lavender;
+            padding: 30px;
+            border-radius: 20px;
+        }
+
+        .branch-card {
+            background: #fff;
+            padding: 25px;
+            border-radius: 6px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: .3s;
+        }
+
+        .branch-card:hover {
+            transform: translateY(-5px);
+        }
     </style>
 </head>
 
@@ -491,7 +555,7 @@
             }
         </style>
 
-        <div class="about-home">
+        <div class="about-home" style="background: lightblue; padding: 20px; border-radius: 20px;">
             <p>
                 <strong>Alwar Golden Roadways (AGR)</strong> is a trusted logistics and transportation company
                 delivering reliable road transport solutions across India. With strong industry experience, we operate
@@ -511,6 +575,62 @@
 
 
     </section>
+
+    <section id="clients">
+        <div class="section-title">
+            <h2>Our Clients</h2>
+        </div>
+
+        <div class="clients-grid">
+
+            <div class="client-card">
+                <img src="rainson.jpeg" alt="Client One">
+                <p>Rainson pipe Industry pvt. ltd.</p>
+            </div>
+
+            <div class="client-card">
+                <img src="inalco.png" alt="Client Two">
+                <p>Inalco Metal pvt. ltd.</p>
+            </div>
+
+            <div class="client-card">
+                <img src="taksh.jpeg" alt="Client Three">
+                <p>Taksh Engineers</p>
+            </div>
+
+            <div class="client-card">
+                <img src="citizen.jpeg" alt="Client Four">
+                <p>Citizen Industries</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="branches" style="background:#f9f9f9">
+        <div class="section-title">
+            <h2>Our Branches</h2>
+        </div>
+
+        <div class="branches-grid">
+            <div class="branch-card">
+                <h3>Ahmedabad</h3>Ph. no.<br>9510309686</p>
+            </div>
+
+            <div class="branch-card">
+                <h3>Bengaluru</h3>
+                <p>Ph. no.<br>9306732316</p>
+            </div>
+
+            <div class="branch-card">
+                <h3>Bhiwadi</h3>
+                <p>Ph. no.<br>7073953601</p>
+            </div>
+
+        </div>
+    </section>
+
+
+
 
     <!-- Services -->
     <section id="services" class="bg-blur">
@@ -585,7 +705,8 @@
         </div>
 
         <div>
-            <h3>Our Office</h3>
+            <h3>Our Offices:</h3>
+            <br>
             <p><strong>Address: </strong>310, 3rd floor, Paarijat Bussiness Center, Nr Ring Road,
                 Gamdi Char
                 Rasta, New Vatva Road, Ahmedabad-382440</p>
@@ -602,8 +723,8 @@
 
     <!-- Mobile Actions -->
     <div class="mobile-actions">
-        <a href="tel:+919574725500" class="call"><i class="fa fa-phone"></i></a>
-        <a href="https://wa.me/919574725500" target="_blank" class="whatsapp"><i class="fa fa-whatsapp"></i></a>
+        <a href="tel:+919510309686" class="call"><i class="fa fa-phone"></i></a>
+        <a href="https://wa.me/919510309686" target="_blank" class="whatsapp"><i class="fa fa-whatsapp"></i></a>
     </div>
 
 </body>
